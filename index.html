@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="top-left-controls">
+        <a href="about.html" class="about-link">About</a>
+        <a href="support.html" class="about-link">Support</a>
+    </div>
+
+    <div class="top-right-controls">
+        <div id="current-date"></div>
+    </div>
+
+    <div class="container">
+        <div class="pomodoro">
+            <div id="timer-display">44:00</div>
+            <button id="start-timer">Start</button>
+            <button id="short-break">Short Break </button>
+            <button id="long-break">Long Break </button>
+            <button id="reset-timer" style="display:none;">Reset</button>
+        </div>
+    </div>
+
+    <div class="bottom-left-controls">
+        <div class="progress-container">
+            <div class="session-progress">
+                <span class="session-progress-label">Session Progress:</span>
+                <span id="session-counter">0</span>
+            </div>
+            <div class="break-progress">
+                <span class="break-progress-label">Short Breaks:</span>
+                <span id="short-break-counter">0</span>
+            </div>
+            <div class="break-progress">
+                <span class="break-progress-label">Long Breaks:</span>
+                <span id="long-break-counter">0</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
