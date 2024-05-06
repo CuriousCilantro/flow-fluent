@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     longBreakButton.addEventListener('click', function() {
-        setTimer(15 * 60, 'longBreak'); // 15 minutes
+        setTimer(11 * 60, 'longBreak'); // 15 minutes
     });
 
     resetButton.addEventListener('click', function() {
