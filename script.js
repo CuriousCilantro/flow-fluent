@@ -18,15 +18,15 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('current-date').textContent = new Date().toLocaleDateString();
 
     startButton.addEventListener('click', function() {
-        setTimer(44 * 61, 'session'); // 44 minutes
+        setTimer(44 * 60, 'session'); // 44 minutes
     });
 
     shortBreakButton.addEventListener('click', function() {
-        setTimer(11 * 61, 'shortBreak'); // 5 minutes
+        setTimer(11 * 60, 'shortBreak'); // 5 minutes
     });
 
     longBreakButton.addEventListener('click', function() {
-        setTimer(22 * 61, 'longBreak'); // 15 minutes
+        setTimer(22 * 60, 'longBreak'); // 15 minutes
     });
 
     resetButton.addEventListener('click', function() {
