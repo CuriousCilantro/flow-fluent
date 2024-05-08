@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     shortBreakButton.addEventListener('click', function() {
-        setTimer(11 * 60, 'shortBreak'); // 5 minutes
+        setTimer(1 * 60, 'shortBreak'); // 5 minutes
     });
 
     longBreakButton.addEventListener('click', function() {
