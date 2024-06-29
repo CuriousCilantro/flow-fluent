@@ -1,37 +1,37 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var timerDisplay = document.getElementById('timer-display');
-    var startButton = document.getElementById('start-timer');
-    var shortBreakButton = document.getElementById('short-break');
-    var longBreakButton = document.getElementById('long-break');
-    var resetButton = document.getElementById('reset-timer');
-    var sessionCounter = document.getElementById('session-counter');
-    var shortBreakCounter = document.getElementById('short-break-counter');
-    var longBreakCounter = document.getElementById('long-break-counter');
-    var completedSessions = 0;
-    var completedShortBreaks = 0;
-    var completedLongBreaks = 0;
-    var timer;
+    let timerDisplay = document.getElementById('timer-display');
+    let startButton = document.getElementById('start-timer');
+    let shortBreakButton = document.getElementById('short-break');
+    let longBreakButton = document.getElementById('long-break');
+    let resetButton = document.getElementById('reset-timer');
+    let sessionCounter = document.getElementById('session-counter');
+    let shortBreakCounter = document.getElementById('short-break-counter');
+    let longBreakCounter = document.getElementById('long-break-counter');
+    let completedSessions = 0;
+    let completedShortBreaks = 0;
+    let completedLongBreaks = 0;
+    let timer;
 
     // Audio elements using the same audio file for all actions
-    var audio = new Audio('alarm.wav');
+    let audio = new Audio('alarm.wav');
 
     document.getElementById('current-date').textContent = new Date().toLocaleDateString();
 
     startButton.addEventListener('click', function() {
-        setTimer(44 * 60, 'session'); // 44 minutes
+        setTimer(2685 , 'session'); // 44 minutes
     });
 
     shortBreakButton.addEventListener('click', function() {
-        setTimer(11 * 60, 'shortBreak'); // 5 minutes
+        setTimer(672 , 'shortBreak'); // 5 minutes
     });
 
     longBreakButton.addEventListener('click', function() {
-        setTimer(22 * 60, 'longBreak'); // 15 minutes
+        setTimer(1343 , 'longBreak'); // 15 minutes
     });
 
     resetButton.addEventListener('click', function() {
         clearInterval(timer);
-        timerDisplay.textContent = '44:00';  // Reset to default display
+        timerDisplay.textContent = '44:44';  // Reset to default display
         audio.play();  // Play sound on reset
         resetTimerDisplay();
     });
