@@ -1,19 +1,19 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var timerDisplay = document.getElementById('timer-display');
-    var startButton = document.getElementById('start-timer');
-    var shortBreakButton = document.getElementById('short-break');
-    var longBreakButton = document.getElementById('long-break');
-    var resetButton = document.getElementById('reset-timer');
-    var sessionCounter = document.getElementById('session-counter');
-    var shortBreakCounter = document.getElementById('short-break-counter');
-    var longBreakCounter = document.getElementById('long-break-counter');
-    var completedSessions = 0;
-    var completedShortBreaks = 0;
-    var completedLongBreaks = 0;
-    var timer;
+    let timerDisplay = document.getElementById('timer-display');
+    let startButton = document.getElementById('start-timer');
+    let shortBreakButton = document.getElementById('short-break');
+    let longBreakButton = document.getElementById('long-break');
+    let resetButton = document.getElementById('reset-timer');
+    let sessionCounter = document.getElementById('session-counter');
+    let shortBreakCounter = document.getElementById('short-break-counter');
+    let longBreakCounter = document.getElementById('long-break-counter');
+    let completedSessions = 0;
+    let completedShortBreaks = 0;
+    let completedLongBreaks = 0;
+    let timer;
 
     // Audio elements using the same audio file for all actions
-    var audio = new Audio('alarm.wav');
+    let audio = new Audio('alarm.wav');
 
     document.getElementById('current-date').textContent = new Date().toLocaleDateString();
 
