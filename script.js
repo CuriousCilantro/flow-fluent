@@ -18,20 +18,20 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('current-date').textContent = new Date().toLocaleDateString();
 
     startButton.addEventListener('click', function() {
-        setTimer(44 * 60, 'session'); // 44 minutes
+        setTimer(2685 , 'session'); // 44 minutes
     });
 
     shortBreakButton.addEventListener('click', function() {
-        setTimer(11 * 60, 'shortBreak'); // 5 minutes
+        setTimer(672 , 'shortBreak'); // 5 minutes
     });
 
     longBreakButton.addEventListener('click', function() {
-        setTimer(22 * 60, 'longBreak'); // 15 minutes
+        setTimer(1343 , 'longBreak'); // 15 minutes
     });
 
     resetButton.addEventListener('click', function() {
         clearInterval(timer);
-        timerDisplay.textContent = '44:00';  // Reset to default display
+        timerDisplay.textContent = '44:44';  // Reset to default display
         audio.play();  // Play sound on reset
         resetTimerDisplay();
     });
