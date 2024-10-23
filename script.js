@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     resetButton.addEventListener('click', function() {
         clearInterval(timer);
-        timerDisplay.textContent = '44:44';  // Reset to default display
+        timerDisplay.textContent = '50:00';  // Reset to default display
         audio.play();  // Play sound on reset
         resetTimerDisplay();
     });
